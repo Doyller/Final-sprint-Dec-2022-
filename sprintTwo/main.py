@@ -22,11 +22,11 @@ they can use in our program
 def DisplayMenu():
     print(f"""
     
-                 m    m   mm   mmmmm 
-                 #    #   ##   #    #
-                 #mmmm#  #  #  #mmmm"
-                 #    #  #mm#  #    #
-                 #    # #    # #mmmm"
+        {"m    m   mm   mmmmm":40}
+        {"#    #   ##   #    #":40}
+        {'#mmmm#  #  #  #mmmm"':40}
+        {"#    #  #mm#  #    #":40}
+        {'#    # #    # #mmmm"':40}
                  
         {"Company Services System":^40}
         ----------------------------------------
