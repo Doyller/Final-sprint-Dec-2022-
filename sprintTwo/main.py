@@ -16,18 +16,20 @@
 # Functions
 
 """
-displayMenu() displays to user a menu of executables 
+displayMenu() displays to user a menu of executables
 they can use in our program
 """
+
+
 def DisplayMenu():
     print(f"""
-    
-        {"m    m   mm   mmmmm":40}
-        {"#    #   ##   #    #":40}
-        {'#mmmm#  #  #  #mmmm"':40}
-        {"#    #  #mm#  #    #":40}
-        {'#    # #    # #mmmm"':40}
-                 
+
+        {"m    m   mm   mmmmm":^40}
+        {"#    #   ##   #    #":^40}
+        {'#mmmm#  #  #  #mmmm"':^40}
+        {"#    #  #mm#  #    #":^40}
+        {'#    # #    # #mmmm"':^40}
+
         {"Company Services System":^40}
         ----------------------------------------
         {"1. Enter a new Employee":<40}
@@ -41,13 +43,33 @@ def DisplayMenu():
         {"9. Exit program ":<40}
 
     """)
-
+    return input("Enter Option: ")
 
 #####################################################
 # process display menu receive user input
 Run = True
-while Run:                      # Main loop
+while Run:  # Main loop
 
     while True:
-        DisplayMenu()
+        tmp = DisplayMenu()
+        if tmp == "1":
+
+        elif tmp == "2":
+
+        elif tmp == "3":
+
+        elif tmp == "4":
+
+        elif tmp == "5":
+
+        elif tmp == "6":
+
+        elif tmp == "7":
+
+        elif tmp == "8":
+
+        elif tmp == "9":
+
+        else:
+            input("invalid input, Please enter a valid option - press enter to continue...")
 
