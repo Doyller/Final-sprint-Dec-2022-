@@ -22,7 +22,12 @@ they can use in our program
 def DisplayMenu():
     print(f"""
     
-        {"HAB Taxi Service":^40}
+                 m    m   mm   mmmmm 
+                 #    #   ##   #    #
+                 #mmmm#  #  #  #mmmm"
+                 #    #  #mm#  #    #
+                 #    # #    # #mmmm"
+                 
         {"Company Services System":^40}
         ----------------------------------------
         {"1. Enter a new Employee":<40}
