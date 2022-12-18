@@ -1,0 +1,32 @@
+#Print Out For Driver
+
+#imports
+import FormatValues as FV
+import datetime
+
+#TestValues for printout check (Delete before adding)
+DriverNum = 22
+InvoiceDate = datetime.datetime.now()
+DailyRentFee = 4
+WeekRentFee = 4
+MonthStandFee = 4
+Cost = 5
+Due = 5
+HST = 5
+Total = 5
+EndDate = datetime.datetime.now()
+
+print("       Driver Financial listing")
+print("—-----------------------------------")
+print(f"Driver Number:                  {DriverNum:>4d}")
+print(f"Start Date:               {FV.FDateS(InvoiceDate):>}")
+print(f"End Date:                 {FV.FDateS(EndDate):>}")
+print(f"Daily Rental Fee:          {FV.FDollar2(DailyRentFee):>9}")
+print(f"Weekly Rental Fee:         {FV.FDollar2(WeekRentFee):>9}")
+print("                          ----------")
+print(f"Monthly Standard Fee:      {FV.FDollar2(MonthStandFee):>9}")
+print(f"Transaction Cost:          {FV.FDollar2(Cost):>9}")
+print(f"Balance Due:               {FV.FDollar2(Due):>9}")
+print("                          ----------")
+print(f"HST:                       {FV.FDollar2(HST):>9}")
+print(f"Total:                     {FV.FDollar2(Total):>9}")
