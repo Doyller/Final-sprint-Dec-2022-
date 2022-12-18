@@ -1,0 +1,47 @@
+#Driver Receipt Report
+
+import datetime
+import FormatValues as FV
+
+#TestValues for printout check (Delete before adding)
+InvoiceDate = datetime.datetime.now()
+ReceiptReason = 0
+RentalID = 0
+DriverNum = 0
+CarNum = 0
+DaysRented = 0
+RentalCost = 0
+HST = 0
+TotalCost = 0
+AmountPaid = 0
+TransCost = 0
+MonthlyStdFee = 0
+BalDue = 0
+HST = 0
+AmountPaid = 0
+Total = 0
+
+
+print("HAB Taxi Services")
+print(f"Driver Receipt for {FV.FDateS(InvoiceDate)}")
+print(f"Reasoning for Receipt:        {ReceiptReason}")
+print("—-------------------------------------------------")
+print(f"Rental ID: Driver Number: Car Number: Days Rented: ")
+print(f"  {RentalID:>4d}        {DriverNum:>4d}         {CarNum:>4d}         {DaysRented:>4d}")
+print("—-------------------------------------------------")
+print(f"Rental Cost :                            {FV.FDollar2(RentalCost):>9}")
+print(f"HST Cost (15%):                          {FV.FDollar2(HST):>9}")
+print(f"Total Cost (Rental Cost Plus HST):       {FV.FDollar2(TotalCost):>9}")
+print(f"Monthly Standard Fee for Vehicle Owners: {FV.FDollar2(MonthlyStdFee):>9}")
+print(f"Amount Paid:                             {FV.FDollar2(AmountPaid):>9}")
+print(f"Transaction Cost:                        {FV.FDollar2(TransCost):>9}")
+print("                                          --------")
+print(f"Balance Due:                             {FV.FDollar2(BalDue):>9}")
+print("                                          --------")
+print(f"HST:                                     {FV.FDollar2(HST):>9}")
+print("                                          --------")
+print(f"Total:                                   {FV.FDollar2(Total):>9}")
+print("—-------------------------------------------------")
+print(f"Amount Paid:                             {FV.FDollar2(AmountPaid):>9}")
+print("                                          --------")
+print(f"Amount Owing on Account:                 {FV.FDollar2(BalDue):>9}")
